@@ -1,0 +1,16 @@
+mixin banner-slider($title, $img, $old_price, $new_price, $name)
+	.banner-slider&attributes(attributes)
+		._container
+			._col
+				._title!= $title[0]
+				._subtitle!= $title[1]
+				._title!= $title[2]
+				a._more(href="#") подробнее
+			._slider
+				each val, index in $name
+					._item
+						img._img(src="assets/images/products/" + $img alt="")
+						._row
+							._old-price= $old_price[index]
+							._new-price= $new_price[index]
+						._product-name!= $name[index]

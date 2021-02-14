@@ -1,0 +1,83 @@
+.popup-callback
+	width: 100%
+	height: 100%
+	display: none
+	align-items: center
+	justify-content: center
+	background-color: rgba(0,0,0,0.7)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+
+	&__container
+		width: 100%
+		max-width: 500px
+		padding: 20px
+		box-sizing: border-box
+		background-color: #fff
+		position: relative
+		@media (max-width: 576px)
+			margin: 0 41px
+		@media (max-width: 450px)
+			margin: 0 10px
+
+	&__title
+		color: $navy
+		font: 700 30px/30px $o
+		text-transform: uppercase
+		text-align: center
+
+	&__text
+		color: $gray
+		font: italic 16px $o
+		text-align: center
+		margin-top: 5px
+
+	&__form
+		display: flex
+		flex-direction: column
+		margin-top: 20px
+
+	&__label
+		color: $text
+		font: 18px $o
+		margin-bottom: 3px
+
+	&__require-sign
+		color: $red
+		font: 18px $o
+		margin-left: 5px
+
+	&__input
+		width: 100%
+		height: 40px
+		padding-left: 20px
+		box-sizing: border-box
+		border: 1px solid $border
+		outline: none
+		margin-bottom: 20px
+
+	&__button
+		width: 100%
+		height: 40px
+		background-color: $navy
+		color: #fff
+		font: 16px $o
+		text-transform: uppercase
+		outline: none
+		border: none
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__close
+		position: absolute
+		right: -31px
+		top: 0
+		cursor: pointer
+		+sprite($close)
+		@media (max-width: 450px)
+			right: 0
+			top: -31px

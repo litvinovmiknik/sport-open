@@ -1,0 +1,43 @@
+mixin footer($page)
+	footer.footer&attributes(attributes)
+		._topbar
+			._container
+				+logo($page)(class="logo--light")
+				+social()
+				+callback()(class="callback--light footer__callback")
+		._container
+			._col
+				h3._title наши магазины
+				._row
+					._item
+						._address Санкт-Петербург, Невский пр. д.147
+						._time 
+							._label Часы работы:
+							._text Пн. - Вс. с 10 до 22 часов.
+							._text Тел. +7(921) 887-97-67
+					._vr
+					._item
+						._address Санкт-Петербург, пр. Александровской фермы д.2
+						._time 
+							._label Часы работы:
+							._text Пн. - Вс. с 11 до 20 часов.
+							._text Тел. +7(812) 313-03-53
+					._vr
+					._item
+						._address Санкт-Петербург, Пулковское ш., 25 корп. 1 ТРК Лето, 1 этаж.
+						._time 
+							._label Часы работы:
+							._text Пн. - Вс. с 10 до 22 часов.
+				._hr
+				h3._title сервис и поддержка
+				._navbar
+					a._link(href="#") Контакты
+					a._link(href="#") Скидки и акции
+					a._link(href="#") Публичная оферта
+					a._link(href="#") Как получить дисконтную карту?
+					a._link(href="#") Доставка
+					a._link(href="#") Возврат
+					a._link(href="#") Способы оплаты
+					a._link(href="#") Как выбирать кросовки?
+			img._vk-group(src="assets/images/vk-group.png" alt="")
+		+copyright()

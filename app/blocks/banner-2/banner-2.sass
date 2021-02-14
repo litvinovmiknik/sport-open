@@ -1,0 +1,31 @@
+.banner-2
+	display: block
+	text-decoration: none
+	width: 770px
+	height: 240px
+	padding: 20px
+	box-sizing: border-box
+	background-image: url(../images/banners/2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	@media (max-width: 992px)
+		width: 100%
+		max-width: 770px
+		display: flex
+		flex-direction: column
+		justify-content: center
+	
+	&__text-1
+		color: #fff
+		font: 700 40px/48px $o
+		text-transform: uppercase
+		@media (max-width: 576px)
+			font-size: 36px
+			line-height: 40px
+		@media (max-width: 450px)
+			font-size: 30px
+			line-height: 36px
+
+	&__text-2
+		color: #fff
+		font: 300 24px/28px $o

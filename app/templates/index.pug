@@ -1,0 +1,33 @@
+extends layouts/default
+block title
+    title Sport Open
+block link
+    link(rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css")
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    .home-page
+        +header('home')
+        main.main
+            +ticker()
+            +home-banner-list()
+            +asics-features()
+            +banner-slider(['Товары', 'с максимальной', 'скидкой'], '1.png', ['6 900 р.', '8 900 р.'], ['5 900 р.', '7 900 р.'], ['TRAINING ESSENTIALS BACKPACK', 'CLASSIC ESSENTIALS BACKPACK'])(class="banner-slider__discount")
+            +product-list-slider(['5.jpg', '8.jpg', '13.jpg', '17.jpg'], ['hit', '-30%', 'new'], ['yes', 'no', 'yes', 'no'])
+            +banner-slider(['Лучшее', 'для бега'], '2.png', ['3 700 р.', '2 700 р.'], ['2 700 р.', '1 700 р.'], ['GEL-DS TRAINER 20 NC', 'CLASSIC GEL-DS TRAINER 30 NC'])(class="banner-slider__run")
+            +product-list-slider(['6.jpg', '9.jpg', '10.jpg', '11.jpg'], ['hit', '-30%', 'new'], ['yes', 'no', 'yes', 'no'])
+            +banner-slider(['Лучшее', 'для волейбола'], '3.png', [], ['3 700 р.', '2 700 р.'], ['Мяч волейбольный SV-3', 'Мяч волейбольный SV-5'])(class="banner-slider__volleyball")
+            +product-list-slider(['16.jpg', '17.jpg', '18.jpg', '19.jpg'], ['hit', '-30%', 'new'], ['yes', 'no', 'yes', 'no'])
+            +banner-slider(['Лучшее', 'для тенниса'], '4.png', ['1 900 р.', '1 700 р.'], ['1 700 р.', '1 500 р.'], ['Кепка nike', 'Кепка nike RT-2'])(class="banner-slider__tennis")
+            +product-list-slider(['12.jpg', '13.jpg', '14.jpg', '15.jpg'], ['hit', '-30%', 'new'], ['yes', 'no', 'yes', 'no'])
+            +choose-sneakers()(class="home-page__choose-sneakers")
+            hr
+            +about-us()(class="home-page__about-us")
+            +subscribe()
+        +footer('home')
+        +page-up()
+        +popup-callback()
+        +popup-success('Наш менеджер свяжется с Вами в ближайшее время')
+block script
+    script(src="assets/scripts/libs/jquery.bxslider.min.js")
+    script(src="assets/scripts/libs/jquery.maskedinput.min.js")
+    script(src="assets/scripts/index.js")

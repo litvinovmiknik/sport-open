@@ -1,0 +1,37 @@
+.about-us
+	display: block
+	
+	&__container
+		width: 100%
+		max-width: 1170px
+		margin: 0 auto
+		@media (max-width: 1190px)
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+
+	&__title
+		@media (max-width: 1190px)
+			text-align: center
+
+	&__row
+		display: flex
+		@media (max-width: 1190px)
+			flex-direction: column
+
+	&__content
+		display: flex
+		flex-direction: column
+		grid-gap: 20px
+		margin-top: 20px
+
+	&__text
+		color: $text
+		font: 14px $o
+
+	&__img
+		width: 100%
+		max-width: 407px
+		margin-left: 20px
+		@media (max-width: 1190px)
+			margin: 0 auto

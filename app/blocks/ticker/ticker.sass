@@ -1,0 +1,104 @@
+.ticker
+	width: 100%
+	max-width: 1920px
+	height: 60px
+	margin: 0 auto
+	background-color: $bg
+	display: flex
+	align-items: center
+	justify-content: center
+	@media (max-width: 768px)
+		height: auto
+	@media (max-width: 576px)
+		padding-top: 40px
+
+	&__slider
+		height: 100%
+		display: flex
+		align-items: center
+
+	&__item
+		display: flex
+		align-items: center
+		justify-content: center
+		@media (max-width: 768px)
+			flex-direction: column
+			text-align: center
+		@media (max-width: 576px)
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+
+	&__text
+		color: $navy
+		font: 18px $o
+		font-weight: 400
+		text-transform: uppercase
+
+	&__link
+		text-decoration: none
+		color: #fff
+		font: 18px $o
+		font-weight: 400
+		text-transform: uppercase
+		background-color: $blue
+		padding: 5px 15px
+		margin-left: 20px
+		flex-shrink: 0
+		@media (max-width: 768px)
+			margin-top: 10px
+			margin-left: 0
+
+	.bx-wrapper
+		+bx-wrapper()
+		width: 600px
+		@media (max-width: 768px)
+			width: 400px
+			height: auto!important
+			padding-top: 20px
+			padding-bottom: 20px
+			display: flex
+			align-items: center
+	
+	.bx-controls-direction
+		@media (max-width: 576px)
+			width: 42px
+			height: 16px
+			position: absolute
+			top: -16px
+			right: 0
+			left: 0
+			margin: auto
+
+	.bx-prev
+		width: $prev-width!important
+		height: $prev-height!important
+		top: 0!important
+		bottom: 0!important
+		left: -31px!important
+		z-index: 2!important
+		margin: auto!important
+		+sprite($prev)
+		@media (max-width: 576px)
+			left: 0!important
+
+		&:hover, &:active, &:focus
+			background-position: $prev-offset-x $prev-offset-y
+
+	.bx-next
+		width: $next-width!important
+		height: $next-height!important
+		top: 0!important
+		bottom: 0!important
+		right: -31px!important
+		z-index: 2!important
+		margin: auto!important
+		+sprite($next)
+		@media (max-width: 576px)
+			right: 0!important
+
+		&:hover, &:active, &:focus
+			background-position: $next-offset-x $next-offset-y
+	
+
+	

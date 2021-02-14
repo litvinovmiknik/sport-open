@@ -1,0 +1,6 @@
+mixin product-list-slider($img, $status, $stock)
+	.product-list-slider&attributes(attributes)
+		._container
+			._slider
+				each val, index in $img
+					+product-item($img[index], $status[index], $stock[index])

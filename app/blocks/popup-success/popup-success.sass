@@ -1,0 +1,39 @@
+.popup-success
+	width: 100%
+	height: 100%
+	display: none
+	align-items: center
+	justify-content: center
+	background-color: rgba(0,0,0,0.7)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	
+	&__container
+		width: 100%
+		max-width: 500px
+		padding: 20px
+		box-sizing: border-box
+		background-color: #fff
+		position: relative
+		@media (max-width: 576px)
+			margin: 0 41px
+		@media (max-width: 450px)
+			margin: 0 10px
+
+	&__text
+		color: $navy
+		font: 700 18px $o
+		text-transform: uppercase
+		text-align: center
+
+	&__close
+		position: absolute
+		right: -31px
+		top: 0
+		cursor: pointer
+		+sprite($close)
+		@media (max-width: 450px)
+			right: 0
+			top: -31px

@@ -1,0 +1,57 @@
+.asics-features
+
+	&__container
+		display: flex
+		align-items: center
+		width: 1170px
+		height: 80px
+		padding: 0 20px
+		box-sizing: border-box
+		background-color: $blue
+		margin: 0 auto
+		@media (max-width: 1190px)
+			width: 100%
+			max-width: 1170px
+			flex-wrap: wrap
+			justify-content: center
+			grid-gap: 20px
+			height: auto
+			padding: 20px
+		@media (max-width: 992px)
+			flex-direction: column
+	
+	&__item
+		display: flex
+		align-items: center
+		margin: 0 20px
+		@media (max-width: 1190px)
+			margin: 0
+		@media (max-width: 992px)
+			display: flex
+		@media (max-width: 768px)
+			display: flex
+		@media (max-width: 576px)
+			flex-direction: column
+			grid-gap: 10px
+			text-align: center
+			
+	&__text
+		color: #fff
+		font: 16px $o
+		text-transform: uppercase
+		margin-left: 10px
+
+	&__icon
+		flex-shrink: 0
+
+	&__logo
+		+sprite($asics-logo)
+
+	&__count
+		+sprite($asics-3)
+
+	&__guaranty
+		+sprite($asics-guaranty)
+
+	&__load
+		+sprite($asics-load)

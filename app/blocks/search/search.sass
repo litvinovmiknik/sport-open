@@ -1,0 +1,45 @@
+.search
+	@media (max-width: 576px)
+		width: 100%
+		padding-left: 55px
+		box-sizing: border-box
+	
+	&__form
+		display: flex
+		align-items: center
+		@media (max-width: 576px)
+			position: relative
+
+	&__input
+		width: 320px
+		height: 45px
+		padding-left: 20px
+		box-sizing: border-box
+		border: none
+		outline: none
+		color: #fff
+		font: 18px $o
+		font-weight: 300
+		background-color: lighten($navy, 10%)
+		@media (max-width: 576px)
+			width: 100%
+			padding-left: 10px
+			padding-right: 60px
+
+	&__button
+		width: 50px
+		height: 45px
+		background-color: $blue
+		border: none
+		outline: none
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		@media (max-width: 576px)
+			position: absolute
+			top: 0
+			right: 0
+
+	&__icon
+		+sprite($search)

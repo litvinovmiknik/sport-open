@@ -1,0 +1,10 @@
+mixin subscribe()
+	section.subscribe&attributes(attributes)
+		._container
+			h1._title Подписаться на рассылку
+			h2._subtitle и получить дополнительные скидки и бонусы
+			hr._hr
+			form._form(action="#" method="post")
+				input._input(type="text" name="name" placeholder="Ваше имя")
+				input._input(type="email" name="email" placeholder="Ваш E-mail")
+				button._button подписаться

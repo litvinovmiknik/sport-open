@@ -1,0 +1,33 @@
+.home-banner-list
+	display: block
+	margin: 20px 0
+	
+	&__container
+		width: 1170px
+		margin: 0 auto
+		display: grid
+		grid-template-areas: "banner-1 banner-3" "banner-2 banner-3"
+		grid-gap: 20px
+		@media (max-width: 1190px)
+			width: 100%
+			max-width: 1170px
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+			grid-template-areas: "banner-1" "banner-2" "banner-3"
+			justify-content: center
+		@media (max-width: 992px)
+			display: flex
+			flex-direction: column
+			align-items: center
+
+	&__banner-1
+		grid-area: banner-1
+
+	&__banner-2
+		grid-area: banner-2
+		
+	&__banner-3
+		grid-area: banner-3
+		@media (max-width: 1190px)
+			justify-self: center

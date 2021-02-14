@@ -1,0 +1,57 @@
+.product-list-slider
+	display: block
+	
+	&__container
+		width: 100%
+		max-width: 1170px
+		padding: 50px 0
+		margin: 0 auto
+		@media (max-width: 1190px)
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+
+	&__slider
+		display: flex
+		grid-gap: 20px
+
+	.bx-wrapper
+		+bx-wrapper()
+		width: 1100px
+		margin: 0 auto
+		@media (max-width: 1190px)
+			width: 820px
+		@media (max-width: 992px)
+			width: 540px
+		@media (max-width: 768px)
+			width: 260px
+
+	.bx-prev
+		width: $prev-2-width!important
+		height: $prev-2-height!important
+		top: 0!important
+		bottom: 0!important
+		left: -34px!important
+		z-index: 2!important
+		margin: auto!important
+		+sprite($prev-2)
+		@media (max-width: 450px)
+			left: -19px!important
+
+		&:hover, &:active, &:focus
+			background-position: $prev-2-offset-x $prev-2-offset-y
+
+	.bx-next
+		width: $next-2-width!important
+		height: $next-2-height!important
+		top: 0!important
+		bottom: 0!important
+		right: -34px!important
+		z-index: 2!important
+		margin: auto!important
+		+sprite($next-2)
+		@media (max-width: 450px)
+			right: -19px!important
+
+		&:hover, &:active, &:focus
+			background-position: $next-2-offset-x $next-2-offset-y

@@ -1,0 +1,16 @@
+.store-list-link
+	display: flex
+	align-items: center
+	text-decoration: none
+
+	&__icon
+		+sprite($store-list-icon)
+
+	&__text
+		color: $blue
+		font: 18px $o
+		text-transform: uppercase
+		border-bottom: 1px dashed $blue
+		margin-left: 10px
+		@media (max-width: 1190px)
+			display: none

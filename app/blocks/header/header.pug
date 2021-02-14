@@ -1,0 +1,9 @@
+mixin header($page)
+	header.header#header&attributes(attributes)
+		._container
+			+logo($page)
+			._row
+				+store-list-link()(class="header__store-list-link")
+				+cart()(class="header__cart")
+				+callback()(class="header__callback")
+		+navbar()

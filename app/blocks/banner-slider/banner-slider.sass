@@ -1,0 +1,171 @@
+.banner-slider
+	width: 100%
+	max-width: 1920px
+	height: 500px
+	margin-left: auto
+	margin-right: auto
+	display: block
+	background-repeat: no-repeat
+	background-size: cover
+	@media (max-width: 1190px)
+		height: auto
+		padding-top: 20px
+		padding-bottom: 50px
+
+	&__discount
+		background-image: url('../images/banners/4.jpg')
+		margin-top: 20px
+
+	&__run
+		background-image: url('../images/banners/5.jpg')
+
+	&__volleyball
+		background-image: url('../images/banners/6.jpg')
+
+	&__tennis
+		background-image: url('../images/banners/7.jpg')
+
+	&__container
+		width: 100%
+		max-width: 1170px
+		height: 100%
+		margin: 0 auto
+		display: flex
+		position: relative
+		@media (max-width: 1190px)
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+			flex-direction: column
+
+	&__row
+		display: flex
+		align-items: baseline
+		justify-content: flex-end
+		@media (max-width: 1190px)
+			justify-content: center
+		@media (max-width: 992px)
+			display: flex
+		@media (max-width: 768px)
+			display: flex
+		@media (max-width: 576px)
+			display: flex
+		@media (max-width: 450px)
+			flex-direction: column
+			align-items: center
+			margin-bottom: 20px
+
+	&__col
+		position: absolute
+		left: 0
+		bottom: 0
+		top: 0
+		z-index: 5
+		margin: auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		@media (max-width: 1190px)
+			position: relative
+			width: 100%
+			align-items: center
+			text-align: center
+
+	&__title
+		color: #fff
+		font: 700 80px/80px $o
+		text-transform: uppercase
+		@media (max-width: 1190px)
+			font-size: 36px
+			line-height: 40px
+
+	&__subtitle
+		color: #fff
+		font: 700 60px/80px $o
+		text-transform: uppercase
+		@media (max-width: 1190px)
+			font-size: 30px
+			line-height: 36px
+
+	&__more
+		text-decoration: none
+		width: 265px
+		height: 60px
+		color: #fff
+		font: 24px $o
+		text-transform: uppercase
+		background-color: $blue
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 40px
+		@media (max-width: 1190px)
+			width: 170px
+			height: 40px
+			font-size: 18px
+			margin-top: 20px
+
+	&__slider
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: flex-end
+
+	&__item
+		display: block
+		text-align: right
+		@media (max-width: 1190px)
+			text-align: center
+
+	&__img
+		max-width: 700px
+		max-height: 270px
+		margin: 0 0 20px auto
+		@media (max-width: 1190px)
+			width: 280px
+			margin-right: auto
+
+	&__old-price
+		color: $red
+		font: 36px $o
+		text-decoration: line-through
+		margin-right: 30px
+		@media (max-width: 450px)
+			margin-right: 0
+
+	&__new-price
+		color: #fff
+		font: 700 60px/60px $o
+
+	&__product-name
+		color: #fff
+		font: 300 48px $o
+		text-transform: uppercase
+		@media (max-width: 1190px)
+			font-size: 36px
+
+	.bx-wrapper
+		+bx-wrapper()
+		width: 100%!important
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		@media (max-width: 1190px)
+			margin-top: 30px
+
+	.bx-pager
+		z-index: 6
+		bottom: 20px
+		left: 0
+		right: 0
+		margin: auto
+		padding-top: 0
+		@media (max-width: 1190px)
+			bottom: -30px
+
+	.bx-pager-link
+		background: #fff!important
+
+		&.active
+			background: $red!important

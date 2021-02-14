@@ -1,0 +1,36 @@
+.callback
+	display: flex
+	align-items: center
+
+	&__icon
+		+sprite($phone-red)
+		text-decoration: none
+		margin-right: 10px
+		@media (max-width: 1190px)
+			margin-right: 0
+
+	&__col
+		display: flex
+		flex-direction: column
+		@media (max-width: 1190px)
+			display: none
+
+	&__phone
+		text-decoration: none
+		color: $navy
+		font: 26px $o
+		font-weight: 600
+		line-height: 26px
+
+	&__link
+		align-self: flex-start
+		color: $blue
+		font: 16px $o
+		border-bottom: 1px dashed $blue
+		text-decoration: none
+
+	&--light &__icon
+		+sprite($phone-blue)
+
+	&--light &__phone
+		color: #fff

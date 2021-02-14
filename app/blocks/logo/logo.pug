@@ -1,0 +1,7 @@
+mixin logo($page, $color)
+	if $page == 'home'
+		.logo&attributes(attributes)
+			._img
+	else
+		a.logo(href="index.html")&attributes(attributes)
+			._img

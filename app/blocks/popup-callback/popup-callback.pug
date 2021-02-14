@@ -1,0 +1,16 @@
+mixin popup-callback()
+	.popup-callback&attributes(attributes)
+		._container
+			._close
+			._title Обратный звонок
+			._text Укажите свой номер телефона и мы перезвоним вам
+			form._form(action="#" method="post")
+				label._label
+					|Ваше имя
+					span._require-sign *
+				input._input(type="text" name="name" required)
+				label._label
+					|Номер телефона
+					span._require-sign *
+				input._input(type="text" name="phone" required)
+				button._button перезвоните мне

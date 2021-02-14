@@ -1,0 +1,145 @@
+.footer
+	background-color: $navy
+	
+	&__topbar
+		width: 100%
+		height: 90px
+		background-color: lighten($navy, 10%)
+		@media (max-width: 768px)
+			height: auto
+			padding: 20px 0
+
+	&__container
+		width: 100%
+		max-width: 1170px
+		height: 100%
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media (max-width: 1190px)
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+			flex-wrap: wrap
+		@media (max-width: 992px)
+			display: flex
+		@media (max-width: 768px)
+			flex-direction: column
+			grid-gap: 20px
+
+	&__callback
+		@media (max-width: 1190px)
+			margin-right: 15px
+		@media (max-width: 758px)
+			margin-right: 0
+
+	&__col
+		max-width: 931px
+		display: flex
+		flex-direction: column
+		grid-gap: 20px
+		@media (max-width: 1190px)
+			margin: 20px auto 0
+
+	&__row
+		display: flex
+		@media (max-width: 992px)
+			flex-wrap: wrap
+			justify-content: center
+			grid-gap: 20px
+
+	&__title
+		color: $blue
+		font: 700 20px/20px $o
+		text-transform: uppercase
+		@media (max-width: 992px)
+			text-align: center
+
+	&__item
+		width: 283px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		grid-gap: 20px
+
+	&__address
+		color: #fff
+		font: 14px $o
+		display: flex
+		min-height: 38px
+
+		&::before
+			content: ''
+			display: flex
+			flex-shrink: 0
+			+sprite($address)
+			margin-right: 10px
+
+	&__time
+		color: #fff
+		font: 14px $o
+		display: flex
+		flex-direction: column
+
+	&__label
+		display: flex
+		margin-bottom: 10px
+		
+		&::before
+			content: ''
+			display: flex
+			flex-shrink: 0
+			+sprite($time)
+			margin-right: 10px
+
+	&__text
+		margin-left: 26px
+
+	&__vr
+		width: 1px
+		height: 115px
+		background-color: $rule
+		margin: auto 20px
+		@media (max-width: 992px)
+			display: none
+
+	&__hr
+		width: 100%
+		height: 1px
+		background-color: $rule
+
+	&__navbar
+		display: grid
+		grid-template-columns: 2fr 2fr 2fr 3fr
+		@media (max-width: 992px)
+			grid-template-columns: 283px 283px
+			justify-content: center
+		@media (max-width: 576px)
+			grid-template-columns: 283px
+			
+
+	&__link
+		color: #fff
+		font: 16px $o
+		text-decoration: none
+		display: flex
+		align-items: center
+		@media (max-width: 992px)
+			width: 283px
+
+		&::before
+			content: ''
+			width: 5px
+			height: 5px
+			border-radius: 3px
+			background-color: $blue
+			margin-right: 10px
+
+	&__vk-group
+		margin: 20px 0 20px 20px
+		@media (max-width: 1190px)
+			margin-left: auto
+			margin-right: auto
+		@media (max-width: 576px)
+			margin-top: 0

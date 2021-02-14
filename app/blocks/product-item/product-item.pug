@@ -1,0 +1,23 @@
+mixin product-item($img, $status, $stock)
+	.product-item&attributes(attributes)
+		._img-wrap
+			img._img(src="assets/images/products/" + $img alt="")
+		._row
+			._old-price 5 700 р.
+			._new-price 3 090 р.
+		._name ASICS STRIPE 1/2 ZIP
+		._desc Футболка-поло
+		._row
+			a._more(href="product.html") подробнее
+			a._cart(href="cart.html")
+				._cart-icon
+		if $status == 'new'
+			._status.-new= $status
+		else if $status == 'hit'
+			._status.-hit= $status
+		else if $status
+			._status= $status
+		if $stock == 'yes'
+			._stock.-yes в наличии
+		else if $stock == 'no'
+			._stock.-no нет в наличии
